@@ -1,0 +1,14 @@
+# Core dependencies
+opencv-python>=4.5.0
+mediapipe>=0.10.0
+numpy>=1.19.0
+
+# Mouse control
+pyautogui>=0.9.50
+
+# Audio control (Windows)
+pycaw>=20230407
+comtypes>=1.1.0
+
+# Screen brightness control
+screen-brightness-control>=0.20.0

@@ -6,14 +6,14 @@ Sistem kontrol mouse berbasis AI yang menggunakan webcam untuk mendeteksi gestur
 
 | Fitur | Gesture | Fungsi |
 |-------|---------|--------|
-| **Move Mouse** | Telunjuk + Tengah tegak | Menggerakkan kursor ke posisi yang diinginkan |
-| **Left Click** | Telunjuk tekuk, Tengah tegak | Klik kiri pada objek |
-| **Right Click** | Telunjuk tegak, Tengah tekuk | Klik kanan untuk menu konteks |
-| **Drag & Drop** | Tangan mengepal (FIST) | Menyeret file atau objek |
-| **Double Click** | V-Gesture (2 jari) | Membuka file atau program |
+| **Move Mouse** | Telunjuk + Tengah tegak (tangan kiri) | Menggerakkan kursor ke posisi yang diinginkan |
+| **Left Click** | Telunjuk tekuk, Tengah tegak (tangan kiri) | Klik kiri pada objek |
+| **Right Click** | Telunjuk tegak, Tengah tekuk (tangan kiri) | Klik kanan untuk menu konteks |
+| **Drag & Drop** | Tangan mengepal (FIST -> tangan kiri) | Menyeret file atau objek |
+| **Double Click** | V-Gesture (2 jari -> tangan kiri) | Membuka file atau program |
 | **Scroll** | Pinch (Tangan Kanan) | Scroll vertikal dan horizontal |
 | **Volume/Brightness** | Pinch (Tangan Kiri) | Mengatur volume dan kecerahan layar |
-| **Mode Standby** | PALM (buka semua jari) | Tidak melakukan aksi apapun |
+| **Mode Standby** | PALM (buka semua jari) -> (kiri dan kanan) | Tidak melakukan aksi apapun |
 
 ## 📋 Persyaratan Sistem
 
@@ -101,27 +101,6 @@ python test_camera.py
 ### Keluar Program
 - Tekan tombol **`q`** pada keyboard
 - Atau tutup jendela OpenCV
-
-## 📁 Struktur Proyek
-
-```
-ai-virtual-mouse/
-├── main.py                    # Program utama
-├── test_gesture.py            # Testing deteksi gesture
-├── test_camera.py             # Testing kamera
-├── debug_gesture.py           # Debugging gesture
-├── requirements.txt           # Daftar dependencies
-├── README.md                  # Dokumentasi
-├── hand_landmarker.task       # Model MediaPipe (auto-download)
-├── config/
-│   └── settings.py            # Konfigurasi sistem
-└── src/
-    ├── __init__.py
-    ├── hand_detector.py       # Deteksi landmark tangan
-    ├── gesture_logic.py       # Logika klasifikasi gesture
-    ├── mouse_controller.py    # Kontrol mouse dan sistem
-    └── camera_utils.py        # Utility kamera
-```
 
 ## ⚙️ Konfigurasi
 
